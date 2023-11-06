@@ -20,7 +20,6 @@ studente.passaggioClasse(5);
 console.log(studente);
 studente.identita(); */
 
-<<<<<<< HEAD
 let alphabethString = "abcdefghijklmnopqrstuvwxyz";
 for (let i = 0; i < 26; i++) {
   let letter = alphabethString[i];
@@ -35,7 +34,7 @@ for (let i = 0; i < 26; i++) {
   arrayAlpha.push(letter);
 }
 console.log(arrayAlpha);
-*/
+
 //Lancio moneta
 /*
 function coinToss(numberOfTosses) {
@@ -201,13 +200,3 @@ for (let i = 0; i < n; i++) {
 }
 console.log(numberArray);
 console.log(orderedNumber);
-=======
-window.addEventListener(`load`, () => {
-  let body = document.body;
-  const div1 = document.createElement(`div`);
-  const paragraf = document.createElement(`p`);
-  body.appendChild(div1);
-  div1.appendChild(paragraf);
-  paragraf.innerText = `Mado' che burdel \n nu veru burdelu`;
-});
->>>>>>> 33b9cf11253a7a2d93d1fab3b21f40831a266c87
