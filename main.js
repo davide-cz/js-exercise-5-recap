@@ -1,103 +1,26 @@
-//Rovescia parola
-/*
-function revert(word) {
-  let string = "";
-  for (let i = word.length - 1; i >= 0; i--) {
-    let string1 = word[i];
-    string +=   string1;
-  }
-  return alert(`${string}`);
-}
-
-userWord = prompt("inserisci una parola da rovesciare");
-revert(userWord);
-*/
-
-//function che somma array di stringhe
-//prompt con n=numero di stringhe da concatenare
-//alert result
-/*
-loremArray = [
-  "lorem ",
-  "ipsum ",
-  "dolor ",
-  "sir ",
-  "amet ",
-  "consectetur ",
-  "adipisicing ",
-  "elit ",
-  "nobis ",
-  "et? ",
-];
-
-function mergeLorem(numberOfWord) {
-  let strings = "";
-  for (i = 0; i < Number(numberOfWord); i++) {
-    word = loremArray[i];
-    strings += word;
-  }
-  return alert(`${strings}`);
-}
-
-request = Number(prompt("quante parole vuoi concatenare?"));
-mergeLorem(request);
-
-*/
-
-//dieci numeri scelti dall'user
+//esercizio 1
 /* 
-function doubleNumber(userNumber) {
-  let response = Number(userNumber) * 2;
-  return alert(`${response}`);
-}
-
-alert("inserisci 10 numeri e verrà calcolato il loro doppio");
-
-number1 = Number(prompt("inserisci il primo numero"));
-number2 = Number(prompt("inserisci il secondo numero"));
-number3 = Number(prompt("inserisci il terzo numero"));
-number4 = Number(prompt("inserisci il quartonumero"));
-number5 = Number(prompt("inserisci il quinto numero"));
-number6 = Number(prompt("inserisci il sesto numero"));
-number7 = Number(prompt("inserisci il settimo numero"));
-number8 = Number(prompt("inserisci l ottavo numero"));
-number9 = Number(prompt("inserisci nono numero"));
-number10 = Number(prompt("inserisci decimo numero"));
-
-response1 = doubleNumber(number1);
-response2 = doubleNumber(number2);
-response3 = doubleNumber(number3);
-response4 = doubleNumber(number4);
-response5 = doubleNumber(number5);
-response6 = doubleNumber(number6);
-response7 = doubleNumber(number7);
-response8 = doubleNumber(number8);
-response9 = doubleNumber(number9);
-response10 = doubleNumber(number10);
-
+const sottrazione = (a, b) => a - b;
+sottrazione(18, 5);
+console.log(sottrazione(18, 5));
  */
-//function che trasforma in maiuscolo o minuscolo
-/*
-function UpperLowerCase(userString) {
-  //let userString = prompt(`inserisci una stringa`);
-  let userString;
-  let userStringNew;
-  let request = prompt(
-    `scegli se trasformare una parola in maiuscolo o minuscolo`
-  );
-  if ((request = `maiuscolo`)) {
-    userStringNew = userString.toUpperCase();
-  }
-  if ((request = `minuscolo`)) {
-    userStringNew = userString.toLowerCase();
-  }
-  return alert(`${userStringNew}`);
-}
-*/
+/* 
+const studente = {
+  nome: "Jose",
+  eta: 15,
+  passaggioClasse: function (anni) {
+    this.eta += anni;
+  },
+  identita: function () {
+    console.log(this.eta + " anni", this.nome);
+  },
+};
 
-/*
-let arrayAlpha = [];
+studente.passaggioClasse(5);
+console.log(studente);
+studente.identita(); */
 
+<<<<<<< HEAD
 let alphabethString = "abcdefghijklmnopqrstuvwxyz";
 for (let i = 0; i < 26; i++) {
   let letter = alphabethString[i];
@@ -278,3 +201,13 @@ for (let i = 0; i < n; i++) {
 }
 console.log(numberArray);
 console.log(orderedNumber);
+=======
+window.addEventListener(`load`, () => {
+  let body = document.body;
+  const div1 = document.createElement(`div`);
+  const paragraf = document.createElement(`p`);
+  body.appendChild(div1);
+  div1.appendChild(paragraf);
+  paragraf.innerText = `Mado' che burdel \n nu veru burdelu`;
+});
+>>>>>>> 33b9cf11253a7a2d93d1fab3b21f40831a266c87
