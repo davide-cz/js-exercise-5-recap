@@ -206,10 +206,10 @@ if (bet1 === `pari` || bet1 === `dispari`) {
   }
 }
 
-*/
 
+*/
 //Allo zoo
-/*
+/* 
 animalArray = [
   `nutria`,
   `pantegana`,
@@ -233,14 +233,14 @@ function animal() {
       break;
     }
   }
-  if (i === 7) {
+  if (i > animalArray.length) {
     alert(`non c'è mi dispiace`);
   }
   return alert(`adesso vai via'`);
 }
-animal();
-*/
+animal(); */
 
+/*
 n = Number(prompt(`quanti numeri vuoi inserire?`));
 nList = [];
 for (i = 0; i < n; i++) {
@@ -251,3 +251,30 @@ nList.sort(function (a, b) {
   return b - a;
 });
 console.log(nList);
+*/
+
+let n = Number(prompt("quanti numeri vuoi inserire?"));
+let numbers;
+let correntNumber;
+let numberArray = [];
+let orderedNumber = [];
+
+for (let i = 0; i < n; i++) {
+  numbers = Number(prompt(`inserisci numero ${i}`));
+  numberArray.push(numbers);
+}
+
+for (let i = 0; i < n; i++) {
+  let minorNumber = Infinity;
+  for (let j = 0; j < numberArray.length; j++) {
+    correntNumber = numberArray[j];
+    if (correntNumber < minorNumber) {
+      minorNumber = correntNumber;
+    }
+    orderedNumber.push(minorNumber);
+    indexToPop = numberArray.indexOf(minorNumber);
+    numberArray.splice(indexToPop, 1);
+  }
+}
+console.log(numberArray);
+console.log(orderedNumber);
